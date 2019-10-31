@@ -1,0 +1,14 @@
+Requirements: 
+
+Mobile first.
+A clear naming convention.
+CSS preprocessor.
+JS to fire the modal. 
+Must work on Chrome, FF, Safari and IE9 and above.
+
+Bonus:
+
+The ability to have more than one modal on the page.
+BEM.
+ES6.
+s

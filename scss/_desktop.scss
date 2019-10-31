@@ -1,0 +1,56 @@
+$tablet-size: 768px;
+$desktop-size: 1080px;
+$tablet-range: 1079px;
+
+// medium size
+@media screen and (min-width: 501px) and (max-width: 768px) {
+}
+
+// large
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  body {
+    background: #333;
+  }
+
+  .modalBox {
+    width: 70%;
+    margin: auto;
+    display: block;
+    position: relative;
+
+    .boxContainer {
+      margin: 0 auto;
+      padding: 1em 0;
+    }
+
+    .topBox {
+      .checkMark {
+        margin-bottom: 3%;
+      }
+      .modalHeader {
+        width: 76%;
+        font-size: 20px;
+      }
+    }
+
+    .bottomBox {
+      padding: 1em;
+      .buttonsContainer {
+        display: inline-flex;
+        .buttonContainer {
+          padding: 5px;
+          .cancelButton {
+            width: 200px;
+          }
+          .continueButton {
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// XL
+@media screen and (min-width: 1171px) {
+}

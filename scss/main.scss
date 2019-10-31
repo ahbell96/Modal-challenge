@@ -1,0 +1,88 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0 auto !important;
+  background: #333;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.modalBox {
+  position: absolute;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 50%;
+  background-color: #f9f9f9;
+
+  .boxContainer {
+    width: 95%;
+    margin: 0;
+  }
+
+  .topBox {
+    width: 100%;
+    margin-left: 3%;
+    margin-top: 2%;
+    .checkMark {
+      height: 25px;
+      display: inline-block;
+      margin: 2%;
+      margin-bottom: 2.5em;
+    }
+    .modalHeader {
+      width: 80%;
+      color: #333;
+      display: inline-block;
+    }
+  }
+
+  .middleBox {
+    width: 95%;
+    .messageText {
+      font-size: 14px;
+      color: #555;
+      margin: 0 auto;
+      width: 90%;
+    }
+  }
+
+  .bottomBox {
+    border-top: 0.5px solid #333;
+    margin: 1em 0 0.5em;
+    padding-top: 0.5em;
+
+    .buttonContainer {
+      width: 90%;
+      margin: 0 auto;
+      padding: 5px 0;
+      .cancelButton {
+        width: 95%;
+        height: 40px;
+        border-radius: 3px;
+        border: 1px solid #333;
+        box-shadow: none;
+        color: #333;
+        font-weight: 900;
+        font-size: 14px;
+      }
+
+      .continueButton {
+        width: 95%;
+        height: 40px;
+        border-radius: 3px;
+        border: 1px solid #333;
+        box-shadow: none;
+        background-color: #152238;
+        color: #fff;
+        font-weight: 900;
+        font-size: 14px;
+      }
+    }
+  }
+}
+@import "desktop";
