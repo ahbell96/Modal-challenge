@@ -85,10 +85,15 @@ p {
     .modalBox .bottomBox {
       padding: 1em; }
       .modalBox .bottomBox .buttonsContainer {
-        display: inline-flex; }
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        width: 70%; }
         .modalBox .bottomBox .buttonsContainer .buttonContainer {
           padding: 5px; }
           .modalBox .bottomBox .buttonsContainer .buttonContainer .cancelButton {
-            width: 200px; }
+            width: 100%; }
           .modalBox .bottomBox .buttonsContainer .buttonContainer .continueButton {
-            width: 200px; } }
+            width: 100%; } }

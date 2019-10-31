@@ -36,14 +36,19 @@ $tablet-range: 1079px;
     .bottomBox {
       padding: 1em;
       .buttonsContainer {
-        display: inline-flex;
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
         .buttonContainer {
           padding: 5px;
           .cancelButton {
-            width: 200px;
+            width: 100%;
           }
           .continueButton {
-            width: 200px;
+            width: 100%;
           }
         }
       }
