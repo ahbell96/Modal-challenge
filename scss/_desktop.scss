@@ -4,6 +4,48 @@ $tablet-range: 1079px;
 
 // medium size
 @media screen and (min-width: 501px) and (max-width: 768px) {
+  .modalBox {
+    position: relative;
+    max-width: 75%;
+    margin: auto;
+    // margin-top: 50%;
+
+    .boxContainer {
+      padding-top: 1.5em;
+      margin: 0 auto;
+
+      .topBox {
+        .checkMark {
+          height: 26px;
+        }
+      }
+
+      .middleBox {
+        padding-bottom: 0.7em;
+      }
+    }
+  }
+
+  .bottomBox {
+    padding: 1em;
+    .buttonsContainer {
+      display: flex;
+      text-align: center;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+      width: 70%;
+      .buttonContainer {
+        padding: 5px;
+        .cancelButton {
+          width: 100%;
+        }
+        .continueButton {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 // large
@@ -13,10 +55,12 @@ $tablet-range: 1079px;
   }
 
   .modalBox {
-    width: 70%;
+    max-width: 80%;
+    width: 65%;
     margin: auto;
     display: block;
     position: relative;
+    // margin-top: 50%;
 
     .boxContainer {
       margin: 0 auto;
@@ -32,24 +76,24 @@ $tablet-range: 1079px;
         font-size: 20px;
       }
     }
+  }
 
-    .bottomBox {
-      padding: 1em;
-      .buttonsContainer {
-        display: flex;
-        text-align: center;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-        width: 70%;
-        .buttonContainer {
-          padding: 5px;
-          .cancelButton {
-            width: 100%;
-          }
-          .continueButton {
-            width: 100%;
-          }
+  .bottomBox {
+    padding: 1em;
+    .buttonsContainer {
+      display: flex;
+      text-align: center;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+      width: 70%;
+      .buttonContainer {
+        padding: 5px;
+        .cancelButton {
+          width: 100%;
+        }
+        .continueButton {
+          width: 100%;
         }
       }
     }
@@ -58,4 +102,62 @@ $tablet-range: 1079px;
 
 // XL
 @media screen and (min-width: 1171px) {
+  .modalBox {
+    max-width: 60%;
+    position: relative;
+    margin: auto;
+
+    .boxContainer {
+      margin: 0 auto;
+      padding: 1em 0 0.5em;
+    }
+
+    .topBox {
+      display: flex;
+      width: 100%;
+      padding: 1em;
+      padding-bottom: 0;
+
+      .checkMark {
+        height: 30px;
+      }
+
+      .modalHeader {
+        font-size: 1.5em;
+      }
+    }
+
+    .middleBox {
+      width: 90%;
+      margin: 0 auto;
+      padding-bottom: 1em;
+
+      .messageText {
+        display: flex;
+        margin: 0 auto;
+        width: 90%;
+        font-size: 1em;
+      }
+    }
+  }
+  .bottomBox {
+    padding: 1em;
+    .buttonsContainer {
+      display: flex;
+      text-align: center;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+      width: 70%;
+      .buttonContainer {
+        padding: 5px;
+        .cancelButton {
+          width: 100%;
+        }
+        .continueButton {
+          width: 100%;
+        }
+      }
+    }
+  }
 }

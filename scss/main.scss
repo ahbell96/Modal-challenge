@@ -3,7 +3,6 @@
 }
 
 body {
-  margin: 0 auto !important;
   background: #333;
 }
 
@@ -12,11 +11,24 @@ p {
   padding: 0;
 }
 
-.modalBox {
+.modalContainer {
+  // to center horizontally / vertically
   position: absolute;
+  float: none;
+  display: table;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.modalBox {
+  position: relative;
   max-width: 100%;
   margin: auto;
-  margin-top: 50%;
   background-color: #f9f9f9;
 
   .boxContainer {
@@ -25,25 +37,28 @@ p {
   }
 
   .topBox {
+    display: flex;
     width: 100%;
     margin-left: 3%;
     margin-top: 2%;
     .checkMark {
       height: 25px;
-      display: inline-block;
+      display: inline-flex;
       margin: 2%;
       margin-bottom: 2.5em;
     }
     .modalHeader {
       width: 80%;
       color: #333;
-      display: inline-block;
+      display: inline-flex;
     }
   }
 
   .middleBox {
     width: 95%;
+    padding-bottom: 0.5em;
     .messageText {
+      display: flex;
       font-size: 14px;
       color: #555;
       margin: 0 auto;
