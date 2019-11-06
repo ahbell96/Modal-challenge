@@ -2,32 +2,50 @@
   font-family: sans-serif; }
 
 body {
-  background: #333; }
+  background: grey; }
 
 p {
   margin: 0;
   padding: 0; }
 
+@keyframes animateCenter {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes animateGone {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+.dispNone {
+  display: none; }
+
 .modalContainer {
-  position: absolute;
+  position: fixed;
   float: none;
-  display: table;
   margin: auto;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   overflow: hidden;
-  z-index: 3; }
+  z-index: 3;
+  animation-name: animateCenter;
+  animation-duration: 2s;
+  width: 100%;
+  height: 100%; }
 
 .modalBox {
-  position: relative;
+  position: fixed;
   max-width: 100%;
   margin: auto;
   background-color: #f9f9f9; }
   .modalBox .boxContainer {
     width: 95%;
-    margin: 0; }
+    margin: 0 auto; }
   .modalBox .topBox {
     display: flex;
     width: 100%;
