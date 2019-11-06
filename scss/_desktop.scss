@@ -4,11 +4,18 @@ $tablet-range: 1079px;
 
 // medium size
 @media screen and (min-width: 501px) and (max-width: 768px) {
+  .modalContainer {
+    margin-top: auto;
+  }
   .modalBox {
     position: relative;
     max-width: 75%;
     margin: auto;
-    // margin-top: 50%;
+
+    .bottomBox {
+      padding-top: 1em;
+      margin: 1em 0 0;
+    }
 
     .boxContainer {
       padding-top: 1.5em;
@@ -50,17 +57,22 @@ $tablet-range: 1079px;
 
 // large
 @media screen and (min-width: 769px) and (max-width: 1170px) {
-  body {
-    background: #333;
+  .modalContainer {
+    margin-top: auto;
   }
 
   .modalBox {
     max-width: 80%;
-    width: 65%;
+    width: 75%;
     margin: auto;
     display: block;
     position: relative;
     // margin-top: 50%;
+
+    .bottomBox {
+      margin: 1em 0 0;
+      padding-top: 1em;
+    }
 
     .boxContainer {
       margin: 0 auto;
@@ -102,10 +114,18 @@ $tablet-range: 1079px;
 
 // XL
 @media screen and (min-width: 1171px) {
+  .modalContainer {
+    margin-top: auto;
+  }
   .modalBox {
     max-width: 60%;
     position: relative;
     margin: auto;
+
+    .bottomBox {
+      margin: 1em 0 0;
+      padding-top: 1em;
+    }
 
     .boxContainer {
       margin: 0 auto;
