@@ -3,7 +3,7 @@
 }
 
 body {
-  background: grey;
+  background: #fff;
 }
 
 p {
@@ -41,12 +41,12 @@ p {
 
 .backgroundChange {
   transition: 1s ease-in-out;
-  background: lightgrey;
+  background: #666;
 }
 
 .background-to-normal {
-  transition: 1s ease-in-out;
-  background: #333;
+  transition: 0.5s ease-in-out;
+  background: #fff;
 }
 
 .dispNone {
