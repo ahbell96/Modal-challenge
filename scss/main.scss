@@ -29,6 +29,26 @@ p {
   }
 }
 
+// @keyframes backgroundChange {
+//   from {
+//     background: #333;
+//   }
+
+//   to {
+//     background: lightgrey;
+//   }
+// }
+
+.backgroundChange {
+  transition: 1s ease-in-out;
+  background: lightgrey;
+}
+
+.background-to-normal {
+  transition: 1s ease-in-out;
+  background: #333;
+}
+
 .dispNone {
   display: none;
 }

@@ -20,6 +20,14 @@ p {
   to {
     opacity: 0; } }
 
+.backgroundChange {
+  transition: 1s ease-in-out;
+  background: lightgrey; }
+
+.background-to-normal {
+  transition: 1s ease-in-out;
+  background: #333; }
+
 .dispNone {
   display: none; }
 
