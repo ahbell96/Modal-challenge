@@ -47,7 +47,10 @@ window.onclick = function(event) {
     }
     //modal.classList.toggle(".dispNone");
     modalContainer.style.display = "none";
-    body.classList.remove("backgroundChange");
-    body.classList.add("backgroundToNormal");
+    if (body.className === "backgroundChange") {
+      body.className = "backgroundToNormal";
+    }
+    //body.classList.remove("backgroundChange");
+    //body.classList.add("backgroundToNormal");
   }
 };
