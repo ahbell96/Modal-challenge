@@ -45,7 +45,7 @@ p {
 
 .buttonList {
   list-style-type: none;
-  display: flex;
+  display: block;
   z-index: 0;
 
   .buttonListItem {
@@ -85,20 +85,20 @@ p {
   }
 
   .topBox {
-    display: flex;
+    display: block;
     width: 100%;
     margin-left: 3%;
     margin-top: 2%;
     .checkMark {
       height: 25px;
-      display: inline-flex;
+      display: inline-block;
       margin: 2%;
-      margin-bottom: 2.5em;
+      margin-bottom: 1.5em;
     }
     .modalHeader {
       width: 80%;
       color: #333;
-      display: inline-flex;
+      display: inline-block;
     }
   }
 
@@ -106,7 +106,7 @@ p {
     width: 95%;
     padding-bottom: 0.5em;
     .messageText {
-      display: flex;
+      display: block;
       font-size: 14px;
       color: #555;
       margin: 0 auto;

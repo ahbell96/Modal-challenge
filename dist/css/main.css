@@ -33,7 +33,7 @@ p {
 
 .buttonList {
   list-style-type: none;
-  display: flex;
+  display: block;
   z-index: 0; }
   .buttonList .buttonListItem {
     padding: 10px;
@@ -65,24 +65,24 @@ p {
     width: 95%;
     margin: 0 auto; }
   .modalBox .topBox {
-    display: flex;
+    display: block;
     width: 100%;
     margin-left: 3%;
     margin-top: 2%; }
     .modalBox .topBox .checkMark {
       height: 25px;
-      display: inline-flex;
+      display: inline-block;
       margin: 2%;
-      margin-bottom: 2.5em; }
+      margin-bottom: 1.5em; }
     .modalBox .topBox .modalHeader {
       width: 80%;
       color: #333;
-      display: inline-flex; }
+      display: inline-block; }
   .modalBox .middleBox {
     width: 95%;
     padding-bottom: 0.5em; }
     .modalBox .middleBox .messageText {
-      display: flex;
+      display: block;
       font-size: 14px;
       color: #555;
       margin: 0 auto;
@@ -121,7 +121,7 @@ p {
   .modalBox {
     position: relative;
     max-width: 75%;
-    margin-top: 50%; }
+    margin-top: 30vh; }
     .modalBox .bottomBox {
       padding-top: 1em;
       margin: 1em 0 0; }
@@ -156,7 +156,7 @@ p {
     width: 75%;
     margin: auto;
     position: relative;
-    margin-top: 50%; }
+    margin-top: 30vh; }
     .modalBox .bottomBox {
       margin: 1em 0 0;
       padding-top: 1em; }
@@ -201,7 +201,7 @@ p {
       margin: 0 auto;
       padding: 1em 0 0.5em; }
     .modalBox .topBox {
-      display: flex;
+      display: block;
       width: 100%;
       padding: 1em;
       padding-bottom: 0; }
