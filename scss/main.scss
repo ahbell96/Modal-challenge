@@ -89,6 +89,10 @@ p {
     width: 100%;
     margin-left: 3%;
     margin-top: 2%;
+    .checkMarkContainer {
+      width: 30px;
+      display: inline-block;
+    }
     .checkMark {
       height: 25px;
       display: inline-block;
