@@ -73,7 +73,7 @@ p {
       height: 25px;
       display: inline-block;
       margin: 2%;
-      margin-bottom: 2.5em; }
+      margin-bottom: 1.5em; }
     .modalBox .topBox .modalHeader {
       width: 80%;
       color: #333;
@@ -201,7 +201,7 @@ p {
       margin: 0 auto;
       padding: 1em 0 0.5em; }
     .modalBox .topBox {
-      display: flex;
+      display: block;
       width: 100%;
       padding: 1em;
       padding-bottom: 0; }
