@@ -39,6 +39,8 @@ button2.onclick = () => {
 
 window.onclick = event => {
   if (event.target == modalContainer) {
+    if (event.target == button1) {
+    }
     //modal.classList.toggle(".dispNone");
     modalContainer.style.display = "none";
     body.classList.remove("backgroundChange");
