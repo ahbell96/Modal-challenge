@@ -32,13 +32,16 @@ p {
   display: none; }
 
 .buttonList {
+  width: 150px;
   list-style-type: none;
   display: block;
-  z-index: 0; }
+  z-index: 0;
+  margin: 0 auto; }
   .buttonList .buttonListItem {
     padding: 10px;
     background: #f3f3f3;
-    margin: 10px; }
+    margin: 10px;
+    text-align: center; }
 
 .modalContainer {
   position: fixed;
@@ -65,7 +68,7 @@ p {
     width: 95%;
     margin: 0 auto; }
   .modalBox .topBox {
-    display: block;
+    display: inline-block;
     width: 100%;
     margin-left: 3%;
     margin-top: 2%; }
@@ -172,10 +175,11 @@ p {
       margin: 0 auto;
       padding: 1em 0; }
     .modalBox .topBox .checkMark {
-      margin-bottom: 1.3em; }
+      margin-bottom: 1.8em;
+      height: 28px; }
     .modalBox .topBox .modalHeader {
       width: 80%;
-      font-size: 20px; }
+      font-size: 24px; }
   .bottomBox {
     padding: 1em; }
     .bottomBox .buttonsContainer {
@@ -184,7 +188,7 @@ p {
       margin: 0 auto;
       align-items: center;
       justify-content: center;
-      width: 70%; }
+      width: 85%; }
       .bottomBox .buttonsContainer .buttonContainer {
         padding: 5px 0;
         display: inline-block;
@@ -193,10 +197,6 @@ p {
           width: 100%; }
         .bottomBox .buttonsContainer .buttonContainer .continueButton {
           width: 100%; } }
-
-@media screen and (min-width: 1045px) and (max-width: 1170px) {
-  .modalBox .topBox .checkMark {
-    margin-bottom: 0; } }
 
 @media screen and (min-width: 1171px) {
   .modalContainer {
@@ -225,7 +225,7 @@ p {
       .modalBox .topBox .modalHeader {
         font-size: 1.5em; }
     .modalBox .middleBox {
-      width: 90%;
+      width: 95%;
       padding-bottom: 1em; }
       .modalBox .middleBox .messageText {
         display: block;

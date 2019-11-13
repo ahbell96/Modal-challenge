@@ -93,11 +93,12 @@
 
     .topBox {
       .checkMark {
-        margin-bottom: 1.3em;
+        margin-bottom: 1.8em;
+        height: 28px;
       }
       .modalHeader {
         width: 80%;
-        font-size: 20px;
+        font-size: 24px;
       }
     }
   }
@@ -110,7 +111,7 @@
       margin: 0 auto;
       align-items: center;
       justify-content: center;
-      width: 70%;
+      width: 85%;
       .buttonContainer {
         padding: 5px 0;
         display: inline-block;
@@ -126,16 +127,16 @@
   }
 }
 
-// larger
-@media screen and (min-width: 1045px) and (max-width: 1170px) {
-  .modalBox {
-    .topBox {
-      .checkMark {
-        margin-bottom: 0;
-      }
-    }
-  }
-}
+// // larger
+// @media screen and (min-width: 1045px) and (max-width: 1170px) {
+//   .modalBox {
+//     .topBox {
+//       .checkMark {
+//         margin-bottom: 0;
+//       }
+//     }
+//   }
+// }
 
 // XL
 @media screen and (min-width: 1171px) {
@@ -179,7 +180,7 @@
     }
 
     .middleBox {
-      width: 90%;
+      width: 95%;
       padding-bottom: 1em;
 
       .messageText {
