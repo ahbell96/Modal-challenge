@@ -86,10 +86,6 @@
       padding-top: 1em;
     }
 
-    .middleBox {
-      // margin: 0 auto;
-    }
-
     .boxContainer {
       margin: 0 auto;
       padding: 1em 0;
@@ -200,11 +196,11 @@
       display: block;
       text-align: center;
       margin: 0 auto;
-      align-items: center;
-      justify-content: center;
       width: 70%;
       .buttonContainer {
-        padding: 5px;
+        padding: 5px 0;
+        display: inline-block;
+        width: 40%;
         .cancelButton {
           width: 100%;
         }

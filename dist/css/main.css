@@ -238,11 +238,11 @@ p {
       display: block;
       text-align: center;
       margin: 0 auto;
-      align-items: center;
-      justify-content: center;
       width: 70%; }
       .bottomBox .buttonsContainer .buttonContainer {
-        padding: 5px; }
+        padding: 5px 0;
+        display: inline-block;
+        width: 40%; }
         .bottomBox .buttonsContainer .buttonContainer .cancelButton {
           width: 100%; }
         .bottomBox .buttonsContainer .buttonContainer .continueButton {
