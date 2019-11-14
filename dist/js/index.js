@@ -8,6 +8,8 @@ var modal2 = document.querySelector(".modalBox2");
 var body = document.querySelector("body");
 var button1 = document.querySelector(".modalOne");
 var button2 = document.querySelector(".modalTwo");
+var cancelButton = document.querySelector(".cancelButton");
+var cancelLink = document.querySelector(".cancelLink");
 
 modalContainer.style.display = "none";
 
@@ -34,14 +36,23 @@ button2.onclick = function() {
   }
   if (body.className === "backgroundToNormal") {
     body.className = "backgroundChange";
-    overlay.style.transition = "ease-in-out 2s";
   } else {
     body.className = "backgroundToNormal";
   }
+
+  if (event.target == cancelButton) {
+    overlay.style.display = "none";
+  }
 };
 
+// cancelButton.onclick = function() {
+//   modalContainer.style.display = "none";
+//   modalContainer.className = "animateGone";
+//   overlay.className = "animateGone";
+// };
+
 window.onclick = function(event) {
-  if (event.target == modalContainer || event.target == overlay) {
+  if (event.target == modalContainer) {
     //modal.classList.toggle(".dispNone");
     overlay.style.display = "none";
     modalContainer.style.display = "none";

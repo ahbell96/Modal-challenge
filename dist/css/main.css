@@ -22,9 +22,11 @@ p {
 
 @keyframes animateGone {
   from {
-    opacity: 1; }
+    transform: scale(1);
+    background-color: rgba(0, 0, 0, 0.5); }
   to {
-    opacity: 0; } }
+    transform: scale(0);
+    background-color: rgba(0, 0, 0, 0); } }
 
 .overlay {
   position: fixed;
@@ -39,8 +41,7 @@ p {
   animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  z-index: 2;
-  cursor: pointer; }
+  z-index: 2; }
 
 .overlayTransition {
   background-color: rgba(0, 0, 0, 0);
@@ -70,7 +71,8 @@ p {
     padding: 10px;
     background: #f3f3f3;
     margin: 10px;
-    text-align: center; }
+    text-align: center;
+    cursor: pointer; }
 
 .modalContainer {
   position: fixed;
@@ -139,7 +141,8 @@ p {
         color: #333;
         font-weight: 900;
         font-size: 14px;
-        font-style: italic; }
+        font-style: italic;
+        cursor: pointer; }
       .modalBox .bottomBox .buttonContainer .continueButton {
         width: 95%;
         height: 40px;
@@ -150,7 +153,8 @@ p {
         color: #fff;
         font-weight: 800;
         font-size: 14px;
-        font-style: italic; }
+        font-style: italic;
+        cursor: pointer; }
 
 @media screen and (min-width: 392px) and (max-width: 521px) {
   .modalBox .topBox .topBoxContainer .checkMarkContainer .checkMark {
